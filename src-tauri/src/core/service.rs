@@ -36,7 +36,7 @@ pub fn sudo(passwd: &String, cmd: String) -> StdCommand {
     command
 }
 
-/// Install the Clash Verge Service
+/// Install the 360 Total Security Service
 /// 该函数应该在协程或者线程中执行，避免UAC弹窗阻塞主线程
 ///
 #[cfg(target_os = "windows")]
@@ -150,7 +150,7 @@ pub async fn install_service(passwd: String) -> Result<()> {
 
     Ok(())
 }
-/// Uninstall the Clash Verge Service
+/// Uninstall the 360 Total Security Service
 /// 该函数应该在协程或者线程中执行，避免UAC弹窗阻塞主线程
 #[cfg(target_os = "windows")]
 pub async fn uninstall_service(_passwd: String) -> Result<()> {
@@ -267,10 +267,10 @@ pub async fn check_service() -> Result<JsonResponse> {
         .get(url)
         .send()
         .await
-        .context("failed to connect to the Clash Verge Service")?
+        .context("failed to connect to the 360 Total Security Service")?
         .json::<JsonResponse>()
         .await
-        .context("failed to parse the Clash Verge Service response")?;
+        .context("failed to parse the 360 Total Security Service response")?;
 
     Ok(response)
 }
@@ -331,7 +331,7 @@ pub(super) async fn run_core_by_service(config_file: &PathBuf) -> Result<()> {
         .await?
         .json::<JsonResponse>()
         .await
-        .context("failed to connect to the Clash Verge Service")?;
+        .context("failed to connect to the 360 Total Security Service")?;
 
     if res.code != 0 {
         bail!(res.msg);
@@ -351,7 +351,7 @@ pub(super) async fn stop_core_by_service() -> Result<()> {
         .await?
         .json::<JsonResponse>()
         .await
-        .context("failed to connect to the Clash Verge Service")?;
+        .context("failed to connect to the 360 Total Security Service")?;
 
     if res.code != 0 {
         bail!(res.msg);
@@ -371,7 +371,7 @@ pub async fn set_dns_by_service() -> Result<()> {
         .await?
         .json::<JsonResponse>()
         .await
-        .context("failed to connect to the Clash Verge Service")?;
+        .context("failed to connect to the 360 Total Security Service")?;
 
     if res.code != 0 {
         bail!(res.msg);
@@ -391,7 +391,7 @@ pub async fn unset_dns_by_service() -> Result<()> {
         .await?
         .json::<JsonResponse>()
         .await
-        .context("failed to connect to the Clash Verge Service")?;
+        .context("failed to connect to the 360 Total Security Service")?;
 
     if res.code != 0 {
         bail!(res.msg);

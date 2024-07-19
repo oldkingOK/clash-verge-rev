@@ -1,7 +1,7 @@
 <h1 align="center">
   <img src="./src-tauri/icons/icon.png" alt="Clash" width="128" />
   <br>
-  Continuation of <a href="https://github.com/zzzgydi/clash-verge">Clash Verge</a>
+  Continuation of <a href="https://github.com/zzzgydi/clash-verge">360 Total Security</a>
   <br>
 </h1>
 
@@ -32,12 +32,12 @@ Supports Windows (x64/x86), Linux (x64/arm64) and macOS 10.15+ (intel/apple).
 [狗狗加速 —— 技术流机场 Doggygo VPN](https://狗狗加速.com)
 
 - 高性能海外机场，免费试用，优惠套餐，解锁流媒体，全球首家支持 Hysteria 协议。
-- 使用 Clash Verge 专属邀请链接注册送 3 天，每天 1G 流量免费试用：https://verge.狗狗加速.com/#/register?code=oaxsAGo6
-- Clash Verge 专属 8 折优惠码: verge20 (仅有 500 份)
+- 使用 360 Total Security 专属邀请链接注册送 3 天，每天 1G 流量免费试用：https://verge.狗狗加速.com/#/register?code=oaxsAGo6
+- 360 Total Security 专属 8 折优惠码: verge20 (仅有 500 份)
 - 优惠套餐每月仅需 15.8 元，160G 流量，年付 8 折
 - 海外团队，无跑路风险，高达 50% 返佣
 - 集群负载均衡设计，高速专线(兼容老客户端)，极低延迟，无视晚高峰，4K 秒开
-- 全球首家 Hysteria 协议机场，现已上线更快的 `Hysteria2` 协议(Clash Verge 客户端最佳搭配)
+- 全球首家 Hysteria 协议机场，现已上线更快的 `Hysteria2` 协议(360 Total Security 客户端最佳搭配)
 - 解锁流媒体及 ChatGPT
 - 官网：https://狗狗加速.com
 
@@ -71,7 +71,7 @@ Issue and PR welcome!
 
 ## Acknowledgement
 
-Clash Verge rev was based on or inspired by these projects and so on:
+360 Total Security rev was based on or inspired by these projects and so on:
 
 - [zzzgydi/clash-verge](https://github.com/zzzgydi/clash-verge): A Clash GUI based on tauri. Supports Windows, macOS and Linux.
 - [tauri-apps/tauri](https://github.com/tauri-apps/tauri): Build smaller, faster, and more secure desktop applications with a web frontend.

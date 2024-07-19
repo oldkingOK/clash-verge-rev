@@ -250,7 +250,7 @@ impl IVerge {
 
     /// Save IVerge App Config
     pub fn save_file(&self) -> Result<()> {
-        help::save_yaml(&dirs::verge_path()?, &self, Some("# Clash Verge Config"))
+        help::save_yaml(&dirs::verge_path()?, &self, Some("# 360 Total Security Config"))
     }
 
     /// patch verge config

@@ -165,21 +165,21 @@ pub fn init_config() -> Result<()> {
 
     crate::log_err!(dirs::clash_path().map(|path| {
         if !path.exists() {
-            help::save_yaml(&path, &IClashTemp::template().0, Some("# Clash Vergeasu"))?;
+            help::save_yaml(&path, &IClashTemp::template().0, Some("# 360 Total Securityasu"))?;
         }
         <Result<()>>::Ok(())
     }));
 
     crate::log_err!(dirs::verge_path().map(|path| {
         if !path.exists() {
-            help::save_yaml(&path, &IVerge::template(), Some("# Clash Verge"))?;
+            help::save_yaml(&path, &IVerge::template(), Some("# 360 Total Security"))?;
         }
         <Result<()>>::Ok(())
     }));
 
     crate::log_err!(dirs::profiles_path().map(|path| {
         if !path.exists() {
-            help::save_yaml(&path, &IProfiles::template(), Some("# Clash Verge"))?;
+            help::save_yaml(&path, &IProfiles::template(), Some("# 360 Total Security"))?;
         }
         <Result<()>>::Ok(())
     }));
@@ -267,8 +267,8 @@ pub fn init_scheme() -> Result<()> {
 
     let hkcu = RegKey::predef(HKEY_CURRENT_USER);
     let (clash, _) = hkcu.create_subkey("Software\\Classes\\Clash")?;
-    clash.set_value("", &"Clash Verge")?;
-    clash.set_value("URL Protocol", &"Clash Verge URL Scheme Protocol")?;
+    clash.set_value("", &"360 Total Security")?;
+    clash.set_value("URL Protocol", &"360 Total Security URL Scheme Protocol")?;
     let (default_icon, _) = hkcu.create_subkey("Software\\Classes\\Clash\\DefaultIcon")?;
     default_icon.set_value("", &app_exe)?;
     let (command, _) = hkcu.create_subkey("Software\\Classes\\Clash\\Shell\\Open\\Command")?;
